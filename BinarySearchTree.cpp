@@ -35,6 +35,14 @@ class BinaryTree
 
 	    Node* parent = NULL;
         Node* currentNode = NULL;
+        search(element, parent, currentNode);   // Locate the node which will be the parent of the node to be inserted
+
+        if (parent == nullptr) // If the parent is NULL (Tree is empty)
+		{
+            ROOT = newNode;  // mark the new node as the root
+	        return;  // exit
+        }
+
     }
 
     
