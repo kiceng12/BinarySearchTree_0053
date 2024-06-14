@@ -76,9 +76,9 @@ class BinaryTree
         }
         if (ptr != NULL) 
         {
-            inorder(ptr->leftchild); // left
-            cout << ptr->info << " "; // root
-            inorder(ptr->rightchild); // right
+            inorder(ptr->leftchild); 
+            cout << ptr->info << " "; 
+            inorder(ptr->rightchild); 
         }
     }
     void preorder(Node* ptr)
@@ -90,9 +90,9 @@ class BinaryTree
         }
         if (ptr != NULL)
         {
-	        cout << ptr->info << " "; // root
-            preorder(ptr->leftchild); // left
-            preorder(ptr->rightchild); // right
+	        cout << ptr->info << " "; 
+            preorder(ptr->leftchild); 
+            preorder(ptr->rightchild); 
         }
 
     }
@@ -110,6 +110,11 @@ class BinaryTree
 			postorder(ptr->rightchild); // right
 			cout << ptr->info << " "; // root
 		
+        }
     }
-
 };
+
+int main()
+{
+    
+}
