@@ -81,6 +81,10 @@ class BinaryTree
             inorder(ptr->rightchild); // right
         }
     }
+    void postorder(Node* ptr)
+    {
+        
+    }
 
     
 
